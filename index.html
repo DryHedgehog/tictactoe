@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="tictactoe.js"></script>
+  <script>
+    window.onload = function() {
+      var tic = new TicTacToe("table");
+    }
+  </script>
+</head>
+<body>
+  <div id="field">
+    <label>Розмірність поля:</label>
+    <input type="text" id="size"><br>
+    <label>Введіть хід:</label><br>
+    <input type="radio" name="group" checked><span>хрестиком</span>
+    <input type="radio" name="group"><span>нуликом</span><br>
+    <input type="button" id="button" value="Згенерувати поле">
+    <table id="table">
+
+    </table>
+  </div>
+
+</body>
+</html>
